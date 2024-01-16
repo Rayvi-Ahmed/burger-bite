@@ -2,10 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens:{
-      sm:"480px",
-      md:"768px",
-      lg:'1024px',
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1024px"
     },
     extend: {
       colors: {
@@ -21,16 +21,20 @@ module.exports = {
         darkColorLight: "#171717",
       },
     },
-    container:{
-      center:true,
-      
-      padding:{
-        DEFAULT:'1rem',
-        sm:"1.5rm"
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1.5rem'
       }
-
+    },
+    fontFamily:{
+      oswald:['oswald','sens-serif'],
+      dmsens:['DM sens','sens-serif']
     }
+      
     
   },
+  
   plugins: [],
 }
