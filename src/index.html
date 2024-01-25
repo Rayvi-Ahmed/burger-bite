@@ -36,33 +36,41 @@
     <title>responsive || burger website</title>
   </head>
       <body>
+        <!-- Header Start -->
       <header class="fixed left-0 right-0 top-0 z-50 w-full ">
-        <nav class="relative container h-14 flex justify-between items-center text-lg md:text-xl">
+        <nav class="container relative h-14 flex justify-between items-center">
         <div>
           <a href="" class="font-oswald uppercase text-2xl">
             bar<span class="text-secondaryColor ">gar</span>
           </a>
         </div>
 
-        <div class="flex flex-col text-center gap-5 md:flex-row">
-        <ul class="absolute flex flex-row justify-center items-center gap-5">
-        <li><a href="">home</a></li>
-        <li><a href="">Bargar</a></li>
-        <li><a href="">Contact</a></li>
-     
+        <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border border-b-secondaryColor border-transparent" id="nav-menu">
+
+        <ul 
+        class="flex flex-col gap-5 text-center"
+        >
+        <li><a class="hover:text-secondaryColor ease-in duration-500" href="">Home</a></li>
+        <li><a class="hover:text-secondaryColor ease-in duration-200" href="">Bargar</a></li>
+        <li><a class="hover:text-secondaryColor ease-in duration-200"  href="">Review</a></li>
+        <li><a class="hover:text-secondaryColor ease-in duration-200"  href="">About us</a></li>
+        <li><a class="hover:text-secondaryColor ease-in duration-200"  href="">Contact</a></li>
         </ul>
-   
-        </div>
-        <div>
+        <div class="absolute top-0 right-4 p-3 text-xl cursor-pointer" id="close-menu">
           <i class="ri-close-line"></i>
         </div>
-        <div>
-          <i class="ri-moon-line"></i>
+      </div>
+
+      <div class="text-xl flex items-center gap-5">
+        <i class="ri-moon-line ml-4 cursor-pointer"></i>
+
+        <div id="hemBurger">
+          <i class="ri-menu-2-line cursor-pointer"></i>
         </div>
 
-        <div>
-          <i class="ri-menu-2-line"></i>
-        </div>
+      </div>
+    
+       
       </nav>
     </header>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
@@ -75,7 +83,9 @@
     <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
 
     <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+<div>
 
+</div>
 
     <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
 
@@ -94,6 +104,6 @@
   <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
 
   <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
-
+<script src="main.js"></script>
   </body>
 </html>
