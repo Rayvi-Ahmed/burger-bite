@@ -4,8 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer{
+@layer base{
     body{
         @apply bg-primaryColor text-whiteColor tracking-wider font-dmsens;
+    }
+
+    section{
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@layer utilities{
+    .HOME_TITLE{
+        @apply text-4xl font-oswald font-bold uppercase lg:text-6xl
+    }
+    .separetor{
+        @apply w-28 h-[2pparagraphx] bg-secondaryColor
+    }
+    .paragraph{
+        @apply text-sm leading-4 text-paragraphColor
+    }
+
+    .btn{
+        @apply px-8 py-3 rounded-md text-sm capitalize text-center ease-linear duration-200
+    }
+
+    .btn-primary{
+        @apply text-black bg-secondaryColor hover:opacity-70
     }
 }
