@@ -6,7 +6,7 @@
 
 @layer base{
     body{
-        @apply bg-primaryColor text-whiteColor tracking-wider font-dmsens;
+        @apply bg-primaryColor text-whiteColor tracking-wider font-dmsans;
     }
 
     section{
