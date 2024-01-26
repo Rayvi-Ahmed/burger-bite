@@ -15,8 +15,12 @@
 }
 
 @layer utilities{
-    .HOME_TITLE{
+    .HOME_TITLE,
+    .CARD_TITLE{
         @apply text-4xl font-oswald font-bold uppercase lg:text-6xl
+    }
+    .CARD_TITLE{
+        @apply text-2xl
     }
     .separetor{
         @apply w-28 h-[2pparagraphx] bg-secondaryColor
