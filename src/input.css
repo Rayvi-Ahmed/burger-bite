@@ -16,10 +16,15 @@
 
 @layer utilities{
     .HOME_TITLE,
-    .CARD_TITLE{
+    .CARD_TITLE,
+    .Section_TITLE{
         @apply text-4xl font-oswald font-bold uppercase lg:text-6xl
     }
-    .CARD_TITLE{
+    .CARD_TITLE
+    {
+        @apply text-2xl
+    }
+    .Section_TITLE{
         @apply text-2xl
     }
     .separetor{
