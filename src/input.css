@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
 @layer base{
     body{
@@ -27,8 +27,9 @@
     .Section_TITLE{
         @apply text-2xl
     }
-    .separetor{
-        @apply w-28 h-[2pparagraphx] bg-secondaryColor
+
+    .separator {
+        @apply w-28 h-[2px] bg-secondaryColor my-5;
     }
     .paragraph{
         @apply text-sm leading-4 text-paragraphColor
@@ -40,5 +41,9 @@
 
     .btn-primary{
         @apply text-black bg-secondaryColor hover:opacity-70
+    }
+    .tebs_Item ul li :hover,
+    .tebs_Item ul li.active{
+        @apply bg-secondaryColor text-black
     }
 }

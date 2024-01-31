@@ -687,6 +687,10 @@ section{
   width: 100%;
 }
 
+.max-w-md{
+  max-width: 28rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -717,6 +721,10 @@ section{
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -733,6 +741,10 @@ section{
   gap: 2.5rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -741,25 +753,16 @@ section{
   gap: 1.25rem;
 }
 
-.gap-2{
-  gap: 0.5rem;
-}
-
-.gap-x-2{
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -816,6 +819,11 @@ section{
   padding: 1.25rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -824,11 +832,6 @@ section{
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-5{
@@ -887,14 +890,14 @@ section{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-secondaryColor{
-  --tw-text-opacity: 1;
-  color: rgb(255 204 0 / var(--tw-text-opacity));
-}
-
 .text-paragraphColor{
   --tw-text-opacity: 1;
   color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+
+.text-secondaryColor{
+  --tw-text-opacity: 1;
+  color: rgb(255 204 0 / var(--tw-text-opacity));
 }
 
 .duration-200{
@@ -938,13 +941,6 @@ section{
   line-height: 2rem;
 }
 
-.separetor{
-  height: 2pparagraphx;
-  width: 7rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 204 0 / var(--tw-bg-opacity));
-}
-
 .paragraph{
   font-size: 0.875rem;
   line-height: 1rem;
@@ -975,6 +971,14 @@ section{
 
 .btn-primary:hover{
   opacity: 0.7;
+}
+
+.tebs_Item ul li :hover,
+    .tebs_Item ul li.active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @keyframes move{
