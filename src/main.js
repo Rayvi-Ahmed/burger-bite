@@ -11,3 +11,20 @@ hemBurger.addEventListener('click',()=>{
 closeMenu.addEventListener('click',()=>{
     navMenu.classList.add('hidden')
 })
+
+
+// Tab//
+const tabs= document.querySelectorAll('.tebs_Item ul li')
+
+tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+
+    tabs.forEach(tab=>{
+        tab.classList.remove('active')
+    })
+
+    tab.classList.add('active')
+      
+    })
+
+})
